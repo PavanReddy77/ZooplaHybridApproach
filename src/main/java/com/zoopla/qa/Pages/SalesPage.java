@@ -1,4 +1,4 @@
-package com.crm.qa.Pages;
+package com.zoopla.qa.Pages;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.crm.qa.BaseClass.TestBase;
+import com.zoopla.qa.BaseClass.TestBase;
 
 public class SalesPage extends TestBase
 {

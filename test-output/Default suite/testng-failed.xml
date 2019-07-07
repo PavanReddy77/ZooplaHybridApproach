@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.TestCases.AgentsPageTest">
+      <class name="com.zoopla.qa.TestCases.SalesPageTest">
         <methods>
-          <include name="printAgentsName"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="clickOnPositionValue"/>
         </methods>
-      </class> <!-- com.crm.qa.TestCases.AgentsPageTest -->
+      </class> <!-- com.zoopla.qa.TestCases.SalesPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

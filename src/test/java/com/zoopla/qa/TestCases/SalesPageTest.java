@@ -1,13 +1,13 @@
-package com.crm.qa.TestCases;
+package com.zoopla.qa.TestCases;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.crm.qa.BaseClass.TestBase;
-import com.crm.qa.Pages.HomePage;
-import com.crm.qa.Pages.SalesPage;
+import com.zoopla.qa.BaseClass.TestBase;
+import com.zoopla.qa.Pages.HomePage;
+import com.zoopla.qa.Pages.SalesPage;
 
 public class SalesPageTest extends TestBase
 {

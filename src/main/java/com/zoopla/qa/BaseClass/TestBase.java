@@ -1,4 +1,4 @@
-package com.crm.qa.BaseClass;
+package com.zoopla.qa.BaseClass;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,8 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
-import com.crm.qa.Utilities.TestUtility;
-import com.crm.qa.Utilities.WebEventListener;
+import com.zoopla.qa.Utilities.TestUtility;
+import com.zoopla.qa.Utilities.WebEventListener;
 
 public class TestBase
 {
@@ -30,7 +30,7 @@ public class TestBase
 		try 
 		{
 			property = new Properties();
-			FileInputStream ip = new FileInputStream("D:\\Pavan_JavaPractice\\Automation\\ZooplaAssignment\\src\\main\\java\\com\\crm\\qa\\Configuration\\Configuration.properties");
+			FileInputStream ip = new FileInputStream("D:\\Automation_Workspace\\ZooplaAssignment\\src\\main\\java\\com\\zoopla\\qa\\Configuration\\Configuration.properties");
 			property.load(ip);
 		} 
 		catch (FileNotFoundException e)
@@ -43,7 +43,7 @@ public class TestBase
 		}
 	}
 	
-	public static void initialization() //Read the properties from Configuration File
+	public static void initialization() //Read the properties from Configuration File.
 	{
 		String broswerName = property.getProperty("Browser");
 		

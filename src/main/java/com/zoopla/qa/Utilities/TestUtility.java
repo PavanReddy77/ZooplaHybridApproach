@@ -1,4 +1,4 @@
-package com.crm.qa.Utilities;
+package com.zoopla.qa.Utilities;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -25,7 +25,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import com.crm.qa.BaseClass.TestBase;
+import com.zoopla.qa.BaseClass.TestBase;
 
 public class TestUtility extends TestBase
 {
@@ -33,7 +33,7 @@ public class TestUtility extends TestBase
 	//Here we write all common methods which are available for all the Classes.
 	
 	//1. These 2 variable we used in TestBase Class for Page Load and Implicit Wait.
-	public static long Page_Load_TimeOut = 20;
+	public static long Page_Load_TimeOut = 40;
 	public static long Implicit_Wait = 30;
 	
 	

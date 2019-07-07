@@ -1,2 +1,31 @@
-2019-06-15 20:46:44,353  INFO [main] WebEventListener:28 - Browser Launched Successfully
-2019-06-15 20:47:10,002  INFO [main] AgentsPage:50 - Browser Terminated
+2019-07-07 23:53:04,665  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-07-07 23:53:04,751  INFO [main] SalesPage:37 - Home Page Title Verified
+2019-07-07 23:53:05,424  INFO [main] SalesPage:59 - Browser Terminated
+2019-07-07 23:53:20,906  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-07-07 23:53:21,012  INFO [main] SalesPage:45 - Home Page --- Zoopla Logo Verified
+2019-07-07 23:53:21,663  INFO [main] SalesPage:59 - Browser Terminated
+2019-07-07 23:53:30,540  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-07-07 23:53:45,637  INFO [main] SalesPage:52 - Successfully Entered City Name and Clicked on Search Button
+2019-07-07 23:53:46,325  INFO [main] SalesPage:59 - Browser Terminated
+2019-07-07 23:53:54,786  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-07-07 23:54:02,316  INFO [main] SalesPage:39 - Sales Page Title Verified
+2019-07-07 23:54:03,008  INFO [main] SalesPage:68 - Browser Terminated
+2019-07-07 23:54:10,350  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-07-07 23:54:20,911  INFO [main] SalesPage:47 - Sales Page --- Zoopla Logo Verified
+2019-07-07 23:54:21,591  INFO [main] SalesPage:68 - Browser Terminated
+2019-07-07 23:54:29,146  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-07-07 23:54:37,275  INFO [main] SalesPage:54 - All Price Lists are printed in Descending Order
+2019-07-07 23:54:37,976  INFO [main] SalesPage:68 - Browser Terminated
+2019-07-07 23:54:46,042  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-07-07 23:55:18,721  INFO [main] AgentsPage:61 - Clicked on Fifth Position from  Price List
+2019-07-07 23:55:19,383  INFO [main] AgentsPage:68 - Browser Terminated
+2019-07-07 23:55:19,713 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-07-07 23:55:19,715 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-07-07 23:55:19,717 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-07-07 23:55:19,718 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-07-07 23:55:19,719 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-07-07 23:55:20,169 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-07-07 23:55:20,170 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-07-07 23:55:20,170 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-07-07 23:55:20,171 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-07-07 23:55:20,171 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

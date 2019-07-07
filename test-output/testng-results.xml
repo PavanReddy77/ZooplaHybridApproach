@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40585" started-at="2019-06-15T15:16:29Z" finished-at="2019-06-15T15:17:10Z">
+  <suite name="Zoopla Suite" duration-ms="148317" started-at="2019-07-07T18:22:51Z" finished-at="2019-07-07T18:25:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40585" started-at="2019-06-15T15:16:29Z" finished-at="2019-06-15T15:17:10Z">
-      <class name="com.crm.qa.TestCases.AgentsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.TestCases.AgentsPageTest@1d176f7]" name="setUp" is-config="true" duration-ms="39594" started-at="2019-06-15T20:46:29Z" finished-at="2019-06-15T20:47:09Z">
+    <test name="Zoopla Site Smoke Test Case" duration-ms="148317" started-at="2019-07-07T18:22:51Z" finished-at="2019-07-07T18:25:19Z">
+      <class name="com.zoopla.qa.TestCases.SalesPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@210366b4]" name="setUp" is-config="true" duration-ms="15978" started-at="2019-07-07T23:53:46Z" finished-at="2019-07-07T23:54:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="printAgentsName()[pri:0, instance:com.crm.qa.TestCases.AgentsPageTest@1d176f7]" name="printAgentsName" duration-ms="19" started-at="2019-06-15T20:47:09Z" finished-at="2019-06-15T20:47:09Z">
+        <test-method status="PASS" signature="verifySalesPageTitle()[pri:1, instance:com.zoopla.qa.TestCases.SalesPageTest@210366b4]" name="verifySalesPageTitle" duration-ms="11" started-at="2019-07-07T23:54:02Z" finished-at="2019-07-07T23:54:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- printAgentsName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.TestCases.AgentsPageTest@1d176f7]" name="tearDown" is-config="true" duration-ms="919" started-at="2019-06-15T20:47:09Z" finished-at="2019-06-15T20:47:10Z">
+        </test-method> <!-- verifySalesPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="691" started-at="2019-07-07T23:54:02Z" finished-at="2019-07-07T23:54:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.TestCases.AgentsPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@210366b4]" name="setUp" is-config="true" duration-ms="17822" started-at="2019-07-07T23:54:03Z" finished-at="2019-07-07T23:54:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verityZooplaLogo()[pri:2, instance:com.zoopla.qa.TestCases.SalesPageTest@210366b4]" name="verityZooplaLogo" duration-ms="79" started-at="2019-07-07T23:54:20Z" finished-at="2019-07-07T23:54:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verityZooplaLogo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="680" started-at="2019-07-07T23:54:20Z" finished-at="2019-07-07T23:54:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@210366b4]" name="setUp" is-config="true" duration-ms="14631" started-at="2019-07-07T23:54:21Z" finished-at="2019-07-07T23:54:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="printListValues()[pri:3, instance:com.zoopla.qa.TestCases.SalesPageTest@210366b4]" name="printListValues" duration-ms="1050" started-at="2019-07-07T23:54:36Z" finished-at="2019-07-07T23:54:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printListValues -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="700" started-at="2019-07-07T23:54:37Z" finished-at="2019-07-07T23:54:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@210366b4]" name="setUp" is-config="true" duration-ms="26683" started-at="2019-07-07T23:54:37Z" finished-at="2019-07-07T23:55:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickOnPositionValue()[pri:4, instance:com.zoopla.qa.TestCases.SalesPageTest@210366b4]" name="clickOnPositionValue" duration-ms="14061" started-at="2019-07-07T23:55:04Z" finished-at="2019-07-07T23:55:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnPositionValue -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@210366b4]" name="tearDown" is-config="true" duration-ms="659" started-at="2019-07-07T23:55:18Z" finished-at="2019-07-07T23:55:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoopla.qa.TestCases.SalesPageTest -->
+      <class name="com.zoopla.qa.TestCases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="13632" started-at="2019-07-07T23:52:51Z" finished-at="2019-07-07T23:53:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyHomePageTitle()[pri:1, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="verifyHomePageTitle" duration-ms="30" started-at="2019-07-07T23:53:04Z" finished-at="2019-07-07T23:53:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="672" started-at="2019-07-07T23:53:04Z" finished-at="2019-07-07T23:53:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="15479" started-at="2019-07-07T23:53:05Z" finished-at="2019-07-07T23:53:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verityZooplaLogo()[pri:2, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="verityZooplaLogo" duration-ms="105" started-at="2019-07-07T23:53:20Z" finished-at="2019-07-07T23:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verityZooplaLogo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="649" started-at="2019-07-07T23:53:21Z" finished-at="2019-07-07T23:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="8880" started-at="2019-07-07T23:53:21Z" finished-at="2019-07-07T23:53:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="enterCityNameToSearchBox()[pri:3, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="enterCityNameToSearchBox" duration-ms="15093" started-at="2019-07-07T23:53:30Z" finished-at="2019-07-07T23:53:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterCityNameToSearchBox -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="684" started-at="2019-07-07T23:53:45Z" finished-at="2019-07-07T23:53:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.zoopla.qa.TestCases.HomePageTest -->
+    </test> <!-- Zoopla Site Smoke Test Case -->
+  </suite> <!-- Zoopla Suite -->
 </testng-results>
