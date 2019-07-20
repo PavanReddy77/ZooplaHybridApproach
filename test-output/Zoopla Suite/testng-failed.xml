@@ -9,7 +9,6 @@
       <class name="com.zoopla.qa.TestCases.HomePageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="enterCityNameToSearchBox"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.zoopla.qa.TestCases.HomePageTest -->
@@ -17,6 +16,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="clickOnPositionValue"/>
         </methods>
       </class> <!-- com.zoopla.qa.TestCases.SalesPageTest -->
     </classes>

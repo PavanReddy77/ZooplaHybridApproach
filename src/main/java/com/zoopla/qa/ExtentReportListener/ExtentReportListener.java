@@ -28,7 +28,7 @@ public class ExtentReportListener implements IReporter
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) 
 	{
-		extent = new ExtentReports(outputDirectory + File.separator	+ "CRMExtentReport.html", true);
+		extent = new ExtentReports(outputDirectory + File.separator	+ "ZooplaExtentReport.html", true);
 
 		for (ISuite suite : suites) 
 		{
