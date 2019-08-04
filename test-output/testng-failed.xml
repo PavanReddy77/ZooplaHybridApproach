@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Zoopla Suite]">
-  <listeners>
-    <listener class-name="com.zoopla.qa.ExtentReportListener.ExtentReportListener"/>
-  </listeners>
+<suite guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Zoopla Suite]">
   <test name="Zoopla Site Smoke Test Case(failed)">
     <classes>
       <class name="com.zoopla.qa.TestCases.HomePageTest">
         <methods>
-          <include name="tearDown"/>
+          <include name="verifyHomePageTitle"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setExtent"/>
         </methods>
       </class> <!-- com.zoopla.qa.TestCases.HomePageTest -->
       <class name="com.zoopla.qa.TestCases.SalesPageTest">
         <methods>
+          <include name="printListValues"/>
+          <include name="verifySalesPageTitle"/>
+          <include name="verityZooplaLogo"/>
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="clickOnPositionValue"/>

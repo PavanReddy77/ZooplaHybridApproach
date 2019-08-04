@@ -1,7 +1,6 @@
 package com.zoopla.qa.TestCases;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -34,6 +33,7 @@ public class SalesPageTest extends TestBase
 	@Test(priority=1)
 	public void verifySalesPageTitle()
 	{
+		extentTest = extent.startTest("verifySalesPageTitle");
 		String title = salesPage.verifySalesPageTitle();
 		Assert.assertEquals(title, "Property for Sale in London - Buy Properties in London - Zoopla");
 		Log.info("Sales Page Title Verified");
@@ -42,6 +42,7 @@ public class SalesPageTest extends TestBase
 	@Test(priority=2)
 	public void verityZooplaLogo()
 	{
+		extentTest = extent.startTest("verityZooplaLogo");
 		boolean flag = salesPage.verifyLogo();
 		Assert.assertTrue(flag);
 		Log.info("Sales Page --- Zoopla Logo Verified");
@@ -50,6 +51,7 @@ public class SalesPageTest extends TestBase
 	@Test(priority=3)
 	public void printListValues()
 	{
+		extentTest = extent.startTest("printListValues");
 		salesPage.priceListPropertiesReverse();
 		Log.info("All Price Lists are printed in Descending Order");
 	}
@@ -57,14 +59,8 @@ public class SalesPageTest extends TestBase
 	@Test(priority=4)
 	public void clickOnPositionValue()
 	{
+		extentTest = extent.startTest("clickOnPositionValue");
 		salesPage.getPropertyByPosition(Integer.parseInt(property.getProperty("PropertyPosition")));
 		Log.info("Clicked on Fifth Position from  Price List");
-	}
-	
-	@AfterMethod
-	public void tearDown()
-	{
-		driver.quit();
-		Log.info("Browser Terminated");
 	}
 }

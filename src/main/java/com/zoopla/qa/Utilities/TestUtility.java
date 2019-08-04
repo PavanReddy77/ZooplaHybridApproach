@@ -4,6 +4,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.Email;
@@ -207,6 +211,29 @@ public class TestUtility extends TestBase
 		email.addTo("rehanabrahim@gmail.com");
 		email.send();
 		System.out.println("Email Sent Successfully======>");
+	}
+	
+	//14. Extent Report - 1
+	public static String getSystemDate() 
+	{
+		DateFormat dateFormat = new SimpleDateFormat("_ddMMyyyy_HHmmss");
+		Date date = new Date();
+		return dateFormat.format(date);
+	}
+	
+	//15. Extent Report - 2
+	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException
+	{
+		//We have generated Date now.
+		String dateName = new SimpleDateFormat("_ddMMyyyy_HHmmss").format(new Date());
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		//After execution, you could see a folder "FailedTestsScreenshots"
+		//Under Source folder
+		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName + ".png";
+		File finalDestination = new File(destination);
+		FileUtils.copyFile(source, finalDestination);
+		return destination;
 	}
 }
 

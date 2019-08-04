@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.zoopla.qa.TestCases.SalesPageTest">
+      <class name="com.zoopla.qa.TestCases.HomePageTest">
         <methods>
+          <include name="verifyHomePageTitle"/>
+          <include name="enterCityNameToSearchBox"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="clickOnPositionValue"/>
+          <include name="verityZooplaLogo"/>
         </methods>
-      </class> <!-- com.zoopla.qa.TestCases.SalesPageTest -->
+      </class> <!-- com.zoopla.qa.TestCases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

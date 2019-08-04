@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,  3 skipped,  2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,10 +102,39 @@
                     <div class="method-list-content failed suite-Zoopla_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Suite" title="com.zoopla.qa.TestCases.SalesPageTest" hash-for-method="clickOnPositionValue">clickOnPositionValue</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Suite" title="com.zoopla.qa.TestCases.HomePageTest" hash-for-method="verifyHomePageTitle">verifyHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Suite" title="com.zoopla.qa.TestCases.SalesPageTest" hash-for-method="verifySalesPageTitle">verifySalesPageTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Zoopla_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Zoopla_Suite" class="hide-methods skipped suite-Zoopla_Suite"> (hide)</a> <!-- hide-methods skipped suite-Zoopla_Suite -->
+                      <a href="#" panel-name="suite-Zoopla_Suite" class="show-methods skipped suite-Zoopla_Suite"> (show)</a> <!-- show-methods skipped suite-Zoopla_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Zoopla_Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Suite" title="com.zoopla.qa.TestCases.SalesPageTest" hash-for-method="clickOnPositionValue">clickOnPositionValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Suite" title="com.zoopla.qa.TestCases.SalesPageTest" hash-for-method="printListValues">printListValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Suite" title="com.zoopla.qa.TestCases.SalesPageTest" hash-for-method="verityZooplaLogo">verityZooplaLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Zoopla_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -121,27 +150,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Suite" title="com.zoopla.qa.TestCases.SalesPageTest" hash-for-method="printListValues">printListValues</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Suite" title="com.zoopla.qa.TestCases.HomePageTest" hash-for-method="verifyHomePageTitle">verifyHomePageTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Suite" title="com.zoopla.qa.TestCases.SalesPageTest" hash-for-method="verifySalesPageTitle">verifySalesPageTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Suite" title="com.zoopla.qa.TestCases.HomePageTest" hash-for-method="verityZooplaLogo">verityZooplaLogo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Zoopla_Suite" title="com.zoopla.qa.TestCases.SalesPageTest" hash-for-method="verityZooplaLogo">verityZooplaLogo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Zoopla_Suite -->
@@ -159,6 +168,100 @@
           <div class="suite-Zoopla_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">com.zoopla.qa.TestCases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitle">
+                  </a> <!-- verifyHomePageTitle -->
+                  <span class="method-name">verifyHomePageTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Zoopla &gt; Search Property to Buy, Rent, House Prices, Estate Agents11] but found [Zoopla &gt; Search Property to Buy, Rent, House Prices, Estate Agents]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.zoopla.qa.TestCases.HomePageTest.verifyHomePageTitle(HomePageTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Zoopla_Suite-class-failed -->
+          <div class="suite-Zoopla_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.zoopla.qa.TestCases.SalesPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySalesPageTitle">
+                  </a> <!-- verifySalesPageTitle -->
+                  <span class="method-name">verifySalesPageTitle</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.zoopla.qa.TestCases.SalesPageTest.verifySalesPageTitle(SalesPageTest.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Zoopla_Suite-class-failed -->
+          <div class="suite-Zoopla_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">com.zoopla.qa.TestCases.SalesPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -167,36 +270,24 @@
                   <a name="clickOnPositionValue">
                   </a> <!-- clickOnPositionValue -->
                   <span class="method-name">clickOnPositionValue</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;a href=&quot;/for-sale/details/52116420?search_identifier=6323219902a84fc51cd97861178ef6ce&quot; class=&quot;listing-results-price text-price&quot;&gt;...&lt;/a&gt; is not clickable at point (513, 424). Other element would receive the click: &lt;h3 class=&quot;listing-results-attr&quot;&gt;...&lt;/h3&gt;
-  (Session info: chrome=75.0.3770.100)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;ADMIN-PC&apos;, ip: &apos;172.20.10.3&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\Admin\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
-Session ID: 01c2344ff784aec702ea0591fe072de4
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:416)
-	at com.zoopla.qa.Pages.SalesPage.getPropertyByPosition(SalesPage.java:59)
-	at com.zoopla.qa.TestCases.SalesPageTest.clickOnPositionValue(SalesPageTest.java:60)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="printListValues">
+                  </a> <!-- printListValues -->
+                  <span class="method-name">printListValues</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verityZooplaLogo">
+                  </a> <!-- verityZooplaLogo -->
+                  <span class="method-name">verityZooplaLogo</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Zoopla_Suite-class-failed -->
+          </div> <!-- suite-Zoopla_Suite-class-skipped -->
           <div class="suite-Zoopla_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -208,42 +299,6 @@ Session ID: 01c2344ff784aec702ea0591fe072de4
                   <a name="enterCityNameToSearchBox">
                   </a> <!-- enterCityNameToSearchBox -->
                   <span class="method-name">enterCityNameToSearchBox</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHomePageTitle">
-                  </a> <!-- verifyHomePageTitle -->
-                  <span class="method-name">verifyHomePageTitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verityZooplaLogo">
-                  </a> <!-- verityZooplaLogo -->
-                  <span class="method-name">verityZooplaLogo</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Zoopla_Suite-class-passed -->
-          <div class="suite-Zoopla_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.zoopla.qa.TestCases.SalesPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="printListValues">
-                  </a> <!-- printListValues -->
-                  <span class="method-name">printListValues</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySalesPageTitle">
-                  </a> <!-- verifySalesPageTitle -->
-                  <span class="method-name">verifySalesPageTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -264,10 +319,7 @@ Session ID: 01c2344ff784aec702ea0591fe072de4
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Zoopla Suite&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.zoopla.qa.ExtentReportListener.ExtentReportListener&quot;/&gt;
-  &lt;/listeners&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;3&quot; name=&quot;Zoopla Suite&quot;&gt;
   &lt;test name=&quot;Zoopla Site Smoke Test Case&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.zoopla.qa.TestCases.HomePageTest&quot;/&gt;
@@ -315,36 +367,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'enterCityNameToSearchBox')
 data.setCell(0, 2, 'com.zoopla.qa.TestCases.HomePageTest')
-data.setCell(0, 3, 12009);
+data.setCell(0, 3, 10479);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'printListValues')
-data.setCell(1, 2, 'com.zoopla.qa.TestCases.SalesPageTest')
-data.setCell(1, 3, 1048);
+data.setCell(1, 1, 'verityZooplaLogo')
+data.setCell(1, 2, 'com.zoopla.qa.TestCases.HomePageTest')
+data.setCell(1, 3, 365);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'clickOnPositionValue')
-data.setCell(2, 2, 'com.zoopla.qa.TestCases.SalesPageTest')
-data.setCell(2, 3, 757);
+data.setCell(2, 1, 'verifyHomePageTitle')
+data.setCell(2, 2, 'com.zoopla.qa.TestCases.HomePageTest')
+data.setCell(2, 3, 21);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verityZooplaLogo')
-data.setCell(3, 2, 'com.zoopla.qa.TestCases.HomePageTest')
-data.setCell(3, 3, 89);
+data.setCell(3, 2, 'com.zoopla.qa.TestCases.SalesPageTest')
+data.setCell(3, 3, 13);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verityZooplaLogo')
+data.setCell(4, 1, 'verifySalesPageTitle')
 data.setCell(4, 2, 'com.zoopla.qa.TestCases.SalesPageTest')
-data.setCell(4, 3, 49);
+data.setCell(4, 3, 2);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyHomePageTitle')
-data.setCell(5, 2, 'com.zoopla.qa.TestCases.HomePageTest')
-data.setCell(5, 3, 33);
+data.setCell(5, 1, 'clickOnPositionValue')
+data.setCell(5, 2, 'com.zoopla.qa.TestCases.SalesPageTest')
+data.setCell(5, 3, 1);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifySalesPageTitle')
+data.setCell(6, 1, 'printListValues')
 data.setCell(6, 2, 'com.zoopla.qa.TestCases.SalesPageTest')
-data.setCell(6, 3, 22);
+data.setCell(6, 3, 1);
 window.suiteTableData['Zoopla_Suite']= { tableData: data, tableDiv: 'times-div-Zoopla_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Zoopla_Suite">
               </div> <!-- times-div-Zoopla_Suite -->
             </div> <!-- times-div -->
@@ -359,9 +411,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Zoopla_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zoopla.qa.TestCases.SalesPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">setExtent</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Zoopla_Suite" class="panel">
@@ -371,95 +432,79 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.zoopla.qa.TestCases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setExtent</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">174 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyHomePageTitle</span>
-                <span class="method-start">24548 ms</span>
+                <span class="method-start">13002 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">24584 ms</span>
+                <span class="method-name">tearDown([TestResult name=verifyHomePageTitle status=FAILURE method=HomePageTest.verifyHomePageTitle()[pri:1,...)</span>
+                <span class="method-start">13026 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">25224 ms</span>
+                <span class="method-start">14147 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verityZooplaLogo</span>
-                <span class="method-start">36699 ms</span>
+                <span class="method-start">21192 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">36791 ms</span>
+                <span class="method-name">tearDown([TestResult name=verityZooplaLogo status=SUCCESS method=HomePageTest.verityZooplaLogo()[pri:2, insta...)</span>
+                <span class="method-start">21559 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">37444 ms</span>
+                <span class="method-start">22170 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">enterCityNameToSearchBox</span>
-                <span class="method-start">47980 ms</span>
+                <span class="method-start">29376 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">59991 ms</span>
+                <span class="method-name">tearDown([TestResult name=enterCityNameToSearchBox status=SUCCESS method=HomePageTest.enterCityNameToSearchBo...)</span>
+                <span class="method-start">39856 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.zoopla.qa.TestCases.SalesPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">60627 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifySalesPageTitle</span>
-                <span class="method-start">84213 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">84239 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">84930 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verityZooplaLogo</span>
-                <span class="method-start">130383 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">130434 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">131060 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">printListValues</span>
-                <span class="method-start">177109 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">178158 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">178816 ms</span>
+                <span class="method-start">40514 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">clickOnPositionValue</span>
-                <span class="method-start">206449 ms</span>
+                <span class="method-name">verifySalesPageTitle</span>
+                <span class="method-start">71520 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">207211 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown([TestResult name=verifySalesPageTitle status=FAILURE method=SalesPageTest.verifySalesPageTitle()[pri...)</span>
+                <span class="method-start">71524 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verityZooplaLogo</span>
+                <span class="method-start">71539 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">printListValues</span>
+                <span class="method-start">71557 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickOnPositionValue</span>
+                <span class="method-start">71561 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
