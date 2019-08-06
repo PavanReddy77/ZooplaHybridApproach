@@ -12,15 +12,6 @@
           <include name="setExtent"/>
         </methods>
       </class> <!-- com.zoopla.qa.TestCases.HomePageTest -->
-      <class name="com.zoopla.qa.TestCases.SalesPageTest">
-        <methods>
-          <include name="verifySalesPageTitle"/>
-          <include name="endReport"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="setExtent"/>
-        </methods>
-      </class> <!-- com.zoopla.qa.TestCases.SalesPageTest -->
     </classes>
   </test> <!-- Zoopla Tests(failed) -->
 </suite> <!-- Failed suite [Zoopla Suite] -->

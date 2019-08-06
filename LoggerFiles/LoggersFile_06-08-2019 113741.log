@@ -1,0 +1,18 @@
+2019-08-06 23:37:53,757  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-08-06 23:37:54,990  INFO [main] SalesPage:129 - Browser Terminated
+2019-08-06 23:38:06,516  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-08-06 23:38:06,621  INFO [main] SalesPage:47 - Home Page --- Zoopla Logo Verified
+2019-08-06 23:38:07,240  INFO [main] SalesPage:129 - Browser Terminated
+2019-08-06 23:38:14,771  INFO [main] WebEventListener:26 - Browser Launched Successfully
+2019-08-06 23:38:24,831  INFO [main] SalesPage:55 - Successfully Entered City Name and Clicked on Search Button
+2019-08-06 23:38:25,472  INFO [main] SalesPage:129 - Browser Terminated
+2019-08-06 23:38:25,518 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-08-06 23:38:25,520 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-08-06 23:38:25,522 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-08-06 23:38:25,523 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-08-06 23:38:25,524 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-08-06 23:38:25,943 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-08-06 23:38:25,944 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-08-06 23:38:25,944 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-08-06 23:38:25,946 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-08-06 23:38:25,946 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

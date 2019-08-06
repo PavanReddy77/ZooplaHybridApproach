@@ -54,9 +54,10 @@ public class TestBase
 		}
 	}
 	
-	@BeforeClass
+	@BeforeTest
 	public void setExtent()
 	{
+		TestUtility.setDateForLog4j();
 		//Telling System Where Exactly Extent Report has to be Generated under Project.
 		//Giving Boolean value true >> If Previous ExtentReport.html is there Replace it with New.
 		//If we make False, It will not Replace.
@@ -97,7 +98,7 @@ public class TestBase
 		driver.get(property.getProperty("Url"));
 	}
 	
-	@AfterClass
+	@AfterTest
 	public void endReport()
 	{
 		extent.flush();
