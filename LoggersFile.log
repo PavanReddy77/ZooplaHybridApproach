@@ -1,9 +1,0 @@
-2019-08-04 15:54:24,339  INFO [main] WebEventListener:25 - Browser Launched Successfully
-2019-08-04 15:54:25,572  INFO [main] SalesPage:125 - Browser Terminated
-2019-08-04 15:54:32,627  INFO [main] WebEventListener:25 - Browser Launched Successfully
-2019-08-04 15:54:32,993  INFO [main] SalesPage:46 - Home Page --- Zoopla Logo Verified
-2019-08-04 15:54:33,603  INFO [main] SalesPage:125 - Browser Terminated
-2019-08-04 15:54:40,809  INFO [main] WebEventListener:25 - Browser Launched Successfully
-2019-08-04 15:54:51,291  INFO [main] SalesPage:54 - Successfully Entered City Name and Clicked on Search Button
-2019-08-04 15:54:51,947  INFO [main] SalesPage:125 - Browser Terminated
-2019-08-04 15:55:08,169  INFO [main] WebEventListener:25 - Browser Launched Successfully

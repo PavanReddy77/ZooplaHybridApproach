@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.zoopla.qa.BaseClass.TestBase;
 import com.zoopla.qa.Pages.HomePage;
 import com.zoopla.qa.Pages.SalesPage;
+import com.zoopla.qa.Utilities.TestUtility;
 
 public class SalesPageTest extends TestBase
 {
@@ -20,7 +21,7 @@ public class SalesPageTest extends TestBase
 	
 	@BeforeMethod
 	public void setUp()
-	{
+	{		
 		initialization();
 		Log.info("Browser Launched Successfully");
 		
@@ -35,7 +36,7 @@ public class SalesPageTest extends TestBase
 	{
 		extentTest = extent.startTest("verifySalesPageTitle");
 		String title = salesPage.verifySalesPageTitle();
-		Assert.assertEquals(title, "Property for Sale in London - Buy Properties in London - Zoopla");
+		Assert.assertEquals(title, "Property for Sale in London - Buy Properties in London - Zoopla11");
 		Log.info("Sales Page Title Verified");
 	}
 	

@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import com.zoopla.qa.BaseClass.TestBase;
 import com.zoopla.qa.Pages.HomePage;
 import com.zoopla.qa.Pages.SalesPage;
+import com.zoopla.qa.Utilities.TestUtility;
 
 public class HomePageTest extends TestBase
 {	
@@ -20,7 +21,7 @@ public class HomePageTest extends TestBase
 	
 	@BeforeMethod
 	public void setUp()
-	{
+	{		
 		initialization();
 		Log.info("Browser Launched Successfully");
 		

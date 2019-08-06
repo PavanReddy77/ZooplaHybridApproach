@@ -12,9 +12,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
+
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -51,13 +54,13 @@ public class TestBase
 		}
 	}
 	
-	@BeforeTest
+	@BeforeClass
 	public void setExtent()
 	{
 		//Telling System Where Exactly Extent Report has to be Generated under Project.
 		//Giving Boolean value true >> If Previous ExtentReport.html is there Replace it with New.
 		//If we make False, It will not Replace.
-		extent = new ExtentReports(System.getProperty("user.dir") + "/TestResults/CRMExtentReport" + TestUtility.getSystemDate() + ".html");
+		extent = new ExtentReports(System.getProperty("user.dir") + "/ZooplaExtentResults/CRMExtentReport" + TestUtility.getSystemDate() + ".html");
 		extent.addSystemInfo("Host Name", "Pavan's Windows System");
 		extent.addSystemInfo("User Name", "Pavan KrishnanReddy");
 		extent.addSystemInfo("Environment", "Automation Testing");
@@ -94,7 +97,7 @@ public class TestBase
 		driver.get(property.getProperty("Url"));
 	}
 	
-	@AfterTest
+	@AfterClass
 	public void endReport()
 	{
 		extent.flush();
