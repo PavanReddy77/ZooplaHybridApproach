@@ -31,8 +31,8 @@ public class TestBase
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 	public static Logger Log;
-	public ExtentReports extent;
-	public ExtentTest extentTest;
+	public static ExtentReports extent;
+	public static ExtentTest extentTest;
 		
 	//We are achieving Inheritance Concept from Java using Base Class.
 	public TestBase() //Constructor to read data from property file.

@@ -1,5 +1,7 @@
 package com.zoopla.qa.TestCases;
 
+import java.lang.reflect.Method;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -7,7 +9,6 @@ import org.testng.annotations.Test;
 import com.zoopla.qa.BaseClass.TestBase;
 import com.zoopla.qa.Pages.HomePage;
 import com.zoopla.qa.Pages.SalesPage;
-import com.zoopla.qa.Utilities.TestUtility;
 
 public class SalesPageTest extends TestBase
 {
@@ -32,35 +33,35 @@ public class SalesPageTest extends TestBase
 	}
 	
 	@Test(priority=1)
-	public void verifySalesPageTitle()
+	public void verifySalesPageTitle(Method method)
 	{
-		extentTest = extent.startTest("verifySalesPageTitle");
+		extentTest = extent.startTest(method.getName());
 		String title = salesPage.verifySalesPageTitle();
 		Assert.assertEquals(title, "Property for Sale in London - Buy Properties in London - Zoopla11");
 		Log.info("Sales Page Title Verified");
 	}
 	
 	@Test(priority=2)
-	public void verityZooplaLogo()
+	public void verityZooplaLogo(Method method)
 	{
-		extentTest = extent.startTest("verityZooplaLogo");
+		extentTest = extent.startTest(method.getName());
 		boolean flag = salesPage.verifyLogo();
 		Assert.assertTrue(flag);
 		Log.info("Sales Page --- Zoopla Logo Verified");
 	}
 	
 	@Test(priority=3)
-	public void printListValues()
+	public void printListValues(Method method)
 	{
-		extentTest = extent.startTest("printListValues");
+		extentTest = extent.startTest(method.getName());
 		salesPage.priceListPropertiesReverse();
 		Log.info("All Price Lists are printed in Descending Order");
 	}
 	
 	@Test(priority=4)
-	public void clickOnPositionValue()
+	public void clickOnPositionValue(Method method)
 	{
-		extentTest = extent.startTest("clickOnPositionValue");
+		extentTest = extent.startTest(method.getName());
 		salesPage.getPropertyByPosition(Integer.parseInt(property.getProperty("PropertyPosition")));
 		Log.info("Clicked on Fifth Position from  Price List");
 	}
