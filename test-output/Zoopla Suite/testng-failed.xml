@@ -17,6 +17,7 @@
           <include name="verifySalesPageTitle" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="clickOnPositionValue" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.zoopla.qa.TestCases.SalesPageTest -->
     </classes>

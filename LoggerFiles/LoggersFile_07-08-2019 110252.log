@@ -1,0 +1,29 @@
+2019-08-07 23:03:14,886  INFO [main] WebEventListener:27 - Browser Launched Successfully
+2019-08-07 23:03:16,159  INFO [main] SalesPage:129 - Browser Terminated
+2019-08-07 23:03:31,142  INFO [main] WebEventListener:27 - Browser Launched Successfully
+2019-08-07 23:03:31,226  INFO [main] SalesPage:48 - Home Page --- Zoopla Logo Verified
+2019-08-07 23:03:31,852  INFO [main] SalesPage:129 - Browser Terminated
+2019-08-07 23:03:43,573  INFO [main] WebEventListener:27 - Browser Launched Successfully
+2019-08-07 23:04:01,601  INFO [main] SalesPage:56 - Successfully Entered City Name and Clicked on Search Button
+2019-08-07 23:04:02,288  INFO [main] SalesPage:129 - Browser Terminated
+2019-08-07 23:04:09,504  INFO [main] WebEventListener:27 - Browser Launched Successfully
+2019-08-07 23:04:26,661  INFO [main] SalesPage:129 - Browser Terminated
+2019-08-07 23:04:39,404  INFO [main] WebEventListener:27 - Browser Launched Successfully
+2019-08-07 23:04:48,249  INFO [main] SalesPage:50 - Sales Page --- Zoopla Logo Verified
+2019-08-07 23:04:48,883  INFO [main] SalesPage:129 - Browser Terminated
+2019-08-07 23:04:59,612  INFO [main] WebEventListener:27 - Browser Launched Successfully
+2019-08-07 23:05:10,577  INFO [main] SalesPage:58 - All Price Lists are printed in Descending Order
+2019-08-07 23:05:11,265  INFO [main] SalesPage:129 - Browser Terminated
+2019-08-07 23:05:24,940  INFO [main] WebEventListener:27 - Browser Launched Successfully
+2019-08-07 23:05:37,587  INFO [main] AgentsPage:66 - Clicked on Fifth Position from  Price List
+2019-08-07 23:05:38,265  INFO [main] AgentsPage:129 - Browser Terminated
+2019-08-07 23:05:38,312 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-08-07 23:05:38,312 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-08-07 23:05:38,312 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-08-07 23:05:38,312 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-08-07 23:05:38,312 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2019-08-07 23:05:38,749 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+2019-08-07 23:05:38,749 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+2019-08-07 23:05:38,749 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2019-08-07 23:05:38,749 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2019-08-07 23:05:38,749 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Admin/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

@@ -27,14 +27,14 @@ import com.zoopla.qa.Utilities.WebEventListener;
 public class TestBase
 {
 	public static WebDriver driver; 
-	public static Properties property; //Making public So that we can use in all Child Classes.
+	public static Properties property; //Making public So that we can use in all Child Classes
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 	public static Logger Log;
 	public static ExtentReports extent;
 	public static ExtentTest extentTest;
 		
-	//We are achieving Inheritance Concept from Java using Base Class.
+	//We are achieving Inheritance Concept from Java using Base Class
 	public TestBase() //Constructor to read data from property file.
 	{
 		Log = Logger.getLogger(this.getClass()); //Logger Implementation.
