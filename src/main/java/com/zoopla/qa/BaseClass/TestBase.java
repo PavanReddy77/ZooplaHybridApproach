@@ -12,10 +12,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -27,7 +25,7 @@ import com.zoopla.qa.Utilities.WebEventListener;
 public class TestBase
 {
 	public static WebDriver driver; 
-	public static Properties property; //Making public So that we can use in all Child Classes
+	public static Properties property; //Making public So that we can use in all Child Classes.
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 	public static Logger Log;
