@@ -1,168 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="7" passed="5">
+<testng-results skipped="2" failed="1" total="5" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Zoopla Suite" duration-ms="116992" started-at="2019-08-18T15:29:31Z" finished-at="2019-08-18T15:31:28Z">
+  <suite name="Zoopla Suite" duration-ms="82356" started-at="2019-09-04T19:01:21Z" finished-at="2019-09-04T19:02:43Z">
     <groups>
     </groups>
-    <test name="Zoopla Tests" duration-ms="116992" started-at="2019-08-18T15:29:31Z" finished-at="2019-08-18T15:31:28Z">
-      <class name="com.zoopla.qa.TestCases.SalesPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911]" name="setUp" is-config="true" duration-ms="17795" started-at="2019-08-18T21:00:12Z" finished-at="2019-08-18T21:00:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifySalesPageTitle(java.lang.reflect.Method)[pri:1, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911]" name="verifySalesPageTitle" duration-ms="14" started-at="2019-08-18T21:00:30Z" finished-at="2019-08-18T21:00:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zoopla.qa.TestCases.SalesPageTest.verifySalesPageTitle(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Property for Sale in London - Buy Properties in London - Zoopla11] but found [Property for Sale in London - Buy Properties in London - Zoopla]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Property for Sale in London - Buy Properties in London - Zoopla11] but found [Property for Sale in London - Buy Properties in London - Zoopla]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at com.zoopla.qa.TestCases.SalesPageTest.verifySalesPageTitle(SalesPageTest.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySalesPageTitle -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911]" name="tearDown" is-config="true" duration-ms="1062" started-at="2019-08-18T21:00:30Z" finished-at="2019-08-18T21:00:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySalesPageTitle status=FAILURE method=SalesPageTest.verifySalesPageTitle(java.lang.reflect.Method)[pri:1, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911]" name="setUp" is-config="true" duration-ms="14062" started-at="2019-08-18T21:00:31Z" finished-at="2019-08-18T21:00:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verityZooplaLogo(java.lang.reflect.Method)[pri:2, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911]" name="verityZooplaLogo" duration-ms="43" started-at="2019-08-18T21:00:45Z" finished-at="2019-08-18T21:00:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zoopla.qa.TestCases.SalesPageTest.verityZooplaLogo(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verityZooplaLogo -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911]" name="tearDown" is-config="true" duration-ms="651" started-at="2019-08-18T21:00:45Z" finished-at="2019-08-18T21:00:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verityZooplaLogo status=SUCCESS method=SalesPageTest.verityZooplaLogo(java.lang.reflect.Method)[pri:2, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911]" name="setUp" is-config="true" duration-ms="15637" started-at="2019-08-18T21:00:46Z" finished-at="2019-08-18T21:01:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="printListValues(java.lang.reflect.Method)[pri:3, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911]" name="printListValues" duration-ms="956" started-at="2019-08-18T21:01:01Z" finished-at="2019-08-18T21:01:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zoopla.qa.TestCases.SalesPageTest.printListValues(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printListValues -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911]" name="tearDown" is-config="true" duration-ms="637" started-at="2019-08-18T21:01:02Z" finished-at="2019-08-18T21:01:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=printListValues status=SUCCESS method=SalesPageTest.printListValues(java.lang.reflect.Method)[pri:3, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911]" name="setUp" is-config="true" duration-ms="17859" started-at="2019-08-18T21:01:03Z" finished-at="2019-08-18T21:01:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="clickOnPositionValue(java.lang.reflect.Method)[pri:4, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911]" name="clickOnPositionValue" duration-ms="6132" started-at="2019-08-18T21:01:21Z" finished-at="2019-08-18T21:01:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.zoopla.qa.TestCases.SalesPageTest.clickOnPositionValue(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnPositionValue -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911]" name="tearDown" is-config="true" duration-ms="684" started-at="2019-08-18T21:01:27Z" finished-at="2019-08-18T21:01:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickOnPositionValue status=SUCCESS method=SalesPageTest.clickOnPositionValue(java.lang.reflect.Method)[pri:4, instance:com.zoopla.qa.TestCases.SalesPageTest@6536e911] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.zoopla.qa.TestCases.SalesPageTest -->
+    <test name="Zoopla Tests" duration-ms="82356" started-at="2019-09-04T19:01:21Z" finished-at="2019-09-04T19:02:43Z">
       <class name="com.zoopla.qa.TestCases.HomePageTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57]" name="setExtent" is-config="true" duration-ms="188" started-at="2019-08-18T20:59:31Z" finished-at="2019-08-18T20:59:31Z">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="setExtent" is-config="true" duration-ms="163" started-at="2019-09-05T00:31:21Z" finished-at="2019-09-05T00:31:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57]" name="setUp" is-config="true" duration-ms="12263" started-at="2019-08-18T20:59:31Z" finished-at="2019-08-18T20:59:44Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="25504" started-at="2019-09-05T00:31:21Z" finished-at="2019-09-05T00:31:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyHomePageTitle(java.lang.reflect.Method)[pri:1, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57]" name="verifyHomePageTitle" duration-ms="33" started-at="2019-08-18T20:59:44Z" finished-at="2019-08-18T20:59:44Z">
+        <test-method status="SKIP" signature="verifyHomePageTitle(java.lang.reflect.Method)[pri:1, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="verifyHomePageTitle" duration-ms="60" started-at="2019-09-05T00:31:47Z" finished-at="2019-09-05T00:31:47Z">
           <params>
             <param index="0">
               <value>
@@ -214,22 +67,156 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitle -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57]" name="tearDown" is-config="true" duration-ms="1176" started-at="2019-08-18T20:59:44Z" finished-at="2019-08-18T20:59:45Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="641" started-at="2019-09-05T00:31:47Z" finished-at="2019-09-05T00:31:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyHomePageTitle status=FAILURE method=HomePageTest.verifyHomePageTitle(java.lang.reflect.Method)[pri:1, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57] output={null}]]]>
+                <![CDATA[[TestResult name=verifyHomePageTitle status=SKIP method=HomePageTest.verifyHomePageTitle(java.lang.reflect.Method)[pri:1, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57]" name="setUp" is-config="true" duration-ms="7732" started-at="2019-08-18T20:59:45Z" finished-at="2019-08-18T20:59:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="11987" started-at="2019-09-05T00:31:47Z" finished-at="2019-09-05T00:31:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verityZooplaLogo(java.lang.reflect.Method)[pri:2, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57]" name="verityZooplaLogo" duration-ms="726" started-at="2019-08-18T20:59:53Z" finished-at="2019-08-18T20:59:53Z">
+        <test-method status="SKIP" signature="verifyHomePageTitle(java.lang.reflect.Method)[pri:1, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="verifyHomePageTitle" duration-ms="18" started-at="2019-09-05T00:31:59Z" finished-at="2019-09-05T00:31:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zoopla.qa.TestCases.HomePageTest.verifyHomePageTitle(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents11] but found [Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents11] but found [Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.zoopla.qa.TestCases.HomePageTest.verifyHomePageTitle(HomePageTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:970)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1149)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="615" started-at="2019-09-05T00:31:59Z" finished-at="2019-09-05T00:32:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageTitle status=SKIP method=HomePageTest.verifyHomePageTitle(java.lang.reflect.Method)[pri:1, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="10447" started-at="2019-09-05T00:32:00Z" finished-at="2019-09-05T00:32:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyHomePageTitle(java.lang.reflect.Method)[pri:1, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="verifyHomePageTitle" duration-ms="19" started-at="2019-09-05T00:32:10Z" finished-at="2019-09-05T00:32:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zoopla.qa.TestCases.HomePageTest.verifyHomePageTitle(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents11] but found [Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents11] but found [Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.zoopla.qa.TestCases.HomePageTest.verifyHomePageTitle(HomePageTest.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:970)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1149)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="1257" started-at="2019-09-05T00:32:10Z" finished-at="2019-09-05T00:32:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomePageTitle status=FAILURE method=HomePageTest.verifyHomePageTitle(java.lang.reflect.Method)[pri:1, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="11671" started-at="2019-09-05T00:32:12Z" finished-at="2019-09-05T00:32:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verityZooplaLogo(java.lang.reflect.Method)[pri:2, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="verityZooplaLogo" duration-ms="82" started-at="2019-09-05T00:32:23Z" finished-at="2019-09-05T00:32:23Z">
           <params>
             <param index="0">
               <value>
@@ -240,22 +227,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verityZooplaLogo -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57]" name="tearDown" is-config="true" duration-ms="635" started-at="2019-08-18T20:59:53Z" finished-at="2019-08-18T20:59:54Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="622" started-at="2019-09-05T00:32:23Z" finished-at="2019-09-05T00:32:24Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verityZooplaLogo status=SUCCESS method=HomePageTest.verityZooplaLogo(java.lang.reflect.Method)[pri:2, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57] output={null}]]]>
+                <![CDATA[[TestResult name=verityZooplaLogo status=SUCCESS method=HomePageTest.verityZooplaLogo(java.lang.reflect.Method)[pri:2, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57]" name="setUp" is-config="true" duration-ms="7194" started-at="2019-08-18T20:59:54Z" finished-at="2019-08-18T21:00:01Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="setUp" is-config="true" duration-ms="10401" started-at="2019-09-05T00:32:24Z" finished-at="2019-09-05T00:32:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="enterCityNameToSearchBox(java.lang.reflect.Method)[pri:3, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57]" name="enterCityNameToSearchBox" duration-ms="10108" started-at="2019-08-18T21:00:01Z" finished-at="2019-08-18T21:00:11Z">
+        <test-method status="PASS" signature="enterCityNameToSearchBox(java.lang.reflect.Method)[pri:3, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="enterCityNameToSearchBox" duration-ms="7596" started-at="2019-09-05T00:32:34Z" finished-at="2019-09-05T00:32:42Z">
           <params>
             <param index="0">
               <value>
@@ -266,18 +253,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterCityNameToSearchBox -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57]" name="tearDown" is-config="true" duration-ms="733" started-at="2019-08-18T21:00:11Z" finished-at="2019-08-18T21:00:12Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="tearDown" is-config="true" duration-ms="645" started-at="2019-09-05T00:32:42Z" finished-at="2019-09-05T00:32:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=enterCityNameToSearchBox status=SUCCESS method=HomePageTest.enterCityNameToSearchBox(java.lang.reflect.Method)[pri:3, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57] output={null}]]]>
+                <![CDATA[[TestResult name=enterCityNameToSearchBox status=SUCCESS method=HomePageTest.enterCityNameToSearchBox(java.lang.reflect.Method)[pri:3, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@6b09bb57]" name="endReport" is-config="true" duration-ms="635" started-at="2019-08-18T21:01:28Z" finished-at="2019-08-18T21:01:28Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.zoopla.qa.TestCases.HomePageTest@335eadca]" name="endReport" is-config="true" duration-ms="567" started-at="2019-09-05T00:32:43Z" finished-at="2019-09-05T00:32:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

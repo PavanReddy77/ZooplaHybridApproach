@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Zoopla Suite]">
+  <listeners>
+    <listener class-name="com.zoopla.qa.RetryLogic.MyTransformer"/>
+  </listeners>
   <test name="Zoopla Tests(failed)">
     <classes>
       <class name="com.zoopla.qa.TestCases.HomePageTest">
         <methods>
-          <include name="verifyHomePageTitle" invocation-numbers="0"/>
+          <include name="verifyHomePageTitle" invocation-numbers="0 0 0"/>
           <include name="setUp"/>
           <include name="endReport"/>
           <include name="tearDown"/>
           <include name="setExtent"/>
         </methods>
       </class> <!-- com.zoopla.qa.TestCases.HomePageTest -->
-      <class name="com.zoopla.qa.TestCases.SalesPageTest">
-        <methods>
-          <include name="verifySalesPageTitle" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.zoopla.qa.TestCases.SalesPageTest -->
     </classes>
   </test> <!-- Zoopla Tests(failed) -->
 </suite> <!-- Failed suite [Zoopla Suite] -->

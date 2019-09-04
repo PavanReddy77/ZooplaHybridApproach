@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Zoopla Suite">
+
+	<listeners>
+		<listener class-name="com.zoopla.qa.RetryLogic.MyTransformer"/>
+	</listeners>
+
 	<test name="Zoopla Tests">
+	
 		<classes>
 			<class name="com.zoopla.qa.TestCases.HomePageTest"/>
 			<class name="com.zoopla.qa.TestCases.SalesPageTest"/>
 		</classes>
-	</test> <!-- Test -->
-</suite> <!-- Suite -->
+		
+	</test>
+</suite>
