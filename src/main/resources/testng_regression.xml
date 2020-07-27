@@ -3,14 +3,14 @@
 <suite name="Zoopla Suite">
 
 	<listeners>
-		<listener class-name="com.zoopla.qa.RetryLogic.MyTransformer"/>
+		<!-- <listener class-name="com.zoopla.qa.RetryLogic.MyTransformer"/> -->
+		<listener class-name="com.zoopla.qa.TestListeners.ExtentReportListener"/>
 	</listeners>
 
 	<test name="Zoopla Tests">
 	
 		<classes>
 			<class name="com.zoopla.qa.TestCases.HomePageTest"/>
-			<class name="com.zoopla.qa.TestCases.SalesPageTest"/>
 		</classes>
 		
 	</test>

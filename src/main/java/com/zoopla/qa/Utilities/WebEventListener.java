@@ -1,26 +1,5 @@
 package com.zoopla.qa.Utilities;
 
-//********************Purpose of WebDriverEventListener*****************//
-//This class implements the WebDriverEventListener, which is included under events.
-//The purpose of implementing this interface to override all the methods & define useful Log Statements. 
-//which would be displayed/logged as the application under test is being run.
-//Do not call any of these methods, instead these methods will be invoked automatically
-//As an when the action done (click, findBy etc). 
-//We get proper Error Console Logs & What's happening during the Execution.
-
-//Important:
-//Do to be done in Base Class -> Create Reference Variable in Class Level.
-//public  static EventFiringWebDriver e_driver;
-//public static WebEventListener eventListener;
-
-//e_driver = new EventFiringWebDriver(driver);
-//Now create object of EventListerHandler to register it with EventFiringWebDriver.
-//eventListener = new WebEventListener();
-//e_driver.register(eventListener);
-//driver = e_driver;
-
-import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
@@ -83,7 +62,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 
 	public void onException(Throwable error, WebDriver driver) 
 	{
-		System.out.println("Exception Occured: " + error);
+		/*System.out.println("Exception Occured: " + error);
 		try 
 		{
 			//Captures Screenshot When Exception Found and Stores in Screenshots Folder.
@@ -93,7 +72,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		catch (IOException e) 
 		{
 			e.printStackTrace();
-		}
+		}*/
 	}
 
 	public void beforeFindBy(By by, WebElement element, WebDriver driver) 

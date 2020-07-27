@@ -34,9 +34,6 @@ import com.zoopla.qa.BaseClass.TestBase;
 
 public class TestUtility extends TestBase
 {
-	
-	//Here we write all common methods which are available for all the Classes.
-	
 	//1. These 2 variable we used in TestBase Class for Page Load and Implicit Wait.
 	public static long Page_Load_TimeOut = 40;
 	public static long Implicit_Wait = 30;
@@ -240,7 +237,7 @@ public class TestUtility extends TestBase
 	//16. Set Date For Log4J
 	public static void setDateForLog4j() 
 	{
-		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyy hhmmss");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMyyy_hhmmss");
 		System.setProperty("current_date", dateFormat.format(new Date()));
 		PropertyConfigurator.configure("./src/main/resources/log4j.properties");
 	}

@@ -2,16 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Zoopla Suite]">
   <listeners>
-    <listener class-name="com.zoopla.qa.RetryLogic.MyTransformer"/>
+    <listener class-name="com.zoopla.qa.TestListeners.ExtentReportListener"/>
   </listeners>
   <test name="Zoopla Tests(failed)">
     <classes>
       <class name="com.zoopla.qa.TestCases.HomePageTest">
         <methods>
-          <include name="verifyHomePageTitle" invocation-numbers="0 0 0"/>
+          <include name="verifyHomePageTitle"/>
           <include name="setUp"/>
           <include name="endReport"/>
           <include name="tearDown"/>
+          <include name="verityZooplaLogo"/>
           <include name="setExtent"/>
         </methods>
       </class> <!-- com.zoopla.qa.TestCases.HomePageTest -->
