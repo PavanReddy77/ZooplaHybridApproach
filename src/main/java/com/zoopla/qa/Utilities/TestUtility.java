@@ -237,7 +237,7 @@ public class TestUtility extends TestBase
 	//16. Set Date For Log4J
 	public static void setDateForLog4j() 
 	{
-		SimpleDateFormat dateFormat = new SimpleDateFormat("ddMMyyy_hhmmss");
+		SimpleDateFormat dateFormat = new SimpleDateFormat("_ddMMyyy_HHmmss");
 		System.setProperty("current_date", dateFormat.format(new Date()));
 		PropertyConfigurator.configure("./src/main/resources/log4j.properties");
 	}

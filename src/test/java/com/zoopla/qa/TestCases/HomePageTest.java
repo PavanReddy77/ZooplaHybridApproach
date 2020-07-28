@@ -36,7 +36,7 @@ public class HomePageTest extends TestBase
 		Log.info("Home Page Title Verified");
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2, enabled=false)
 	public void verityZooplaLogo()
 	{
 		boolean flag = homePage.verifyLogo();
