@@ -65,8 +65,6 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		/*System.out.println("Exception Occured: " + error);
 		try 
 		{
-			//Captures Screenshot When Exception Found and Stores in Screenshots Folder.
-			//No Need to take Screenshot again and again.
 			TestUtility.takeScreenshotAtEndOfTest();
 		} 
 		catch (IOException e) 
