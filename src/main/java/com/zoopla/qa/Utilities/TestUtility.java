@@ -9,10 +9,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.mail.DefaultAuthenticator;
-import org.apache.commons.mail.Email;
-import org.apache.commons.mail.EmailException;
-import org.apache.commons.mail.SimpleEmail;
 import org.apache.log4j.PropertyConfigurator;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -34,19 +30,17 @@ import com.zoopla.qa.BaseClass.TestBase;
 
 public class TestUtility extends TestBase
 {
-	//1. These 2 variable we used in TestBase Class for Page Load and Implicit Wait.
+	//These 2 variable we used in TestBase Class for Page Load and Implicit Wait.
 	public static long Page_Load_TimeOut = 40;
 	public static long Implicit_Wait = 30;
 	
-	
-	//2. Switching to Frame Utility.
+	//Switching to Frame Utility.
 	public void switchToFrame()
 	{
 		driver.switchTo().frame("mainpanel");
 	}
 	
-	
-	//3. Excel Sheet Path - Excel Utility.
+	//Excel Sheet Path - Excel Utility.
 	public static String TESTDATA_SHEET_PATH = "D:\\Pavan_JavaPractice\\Automation\\MavenHybridFramework"
 			+ "\\src\\main\\java\\com\\crm\\qa\\TestData\\FreeCRMTestData.xlsx";		
 	
@@ -77,20 +71,17 @@ public class TestUtility extends TestBase
 		}
 		sheet = book.getSheet(sheetName);
 		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
-		// System.out.println(sheet.getLastRowNum() + "--------" +
-		// sheet.getRow(0).getLastCellNum());
 		for (int i = 0; i < sheet.getLastRowNum(); i++) 
 		{
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) 
 			{
 				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
-				//System.out.println(data[i][k]);
 			}
 		}
 		return data;
 	}
 	
-	//4. Screenshot Utility.
+	//Screenshot Utility.
 	public static void takeScreenshotAtEndOfTest() throws IOException
 	{
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -98,7 +89,7 @@ public class TestUtility extends TestBase
 		FileUtils.copyFile(scrFile, new File(currentDir + "/Screenshots/" + System.currentTimeMillis() + ".png"));
 	}
 	
-	//5. Explicit Wait for Click on any Element
+	//Explicit Wait for Click on any Element.
 	public static void clickOn(WebDriver driver, WebElement element, int timeout)
 	{
 		new WebDriverWait(driver, timeout).
@@ -106,7 +97,7 @@ public class TestUtility extends TestBase
 		element.click();
 	}
 	
-	//6. Explicit Wait for Sending Data to any Element
+	//Explicit Wait for Sending Data to any Element.
 	public static void sendKeys(WebDriver driver, WebElement element, int timeout, String value)
 	{
 		new WebDriverWait(driver, timeout).
@@ -114,7 +105,7 @@ public class TestUtility extends TestBase
 		element.sendKeys(value);
 	}
 	
-	//7. To Highlight the Element
+	//To Highlight the Element.
 	public static void highLightElement(WebDriver driver,WebElement element)
 	{
 		JavascriptExecutor js=(JavascriptExecutor)driver;
@@ -130,7 +121,7 @@ public class TestUtility extends TestBase
 		js.executeScript("arguments[0].setAttribute('style','border: solid 2px white')", element);
 	}
 	
-	//8. To Handle Frame
+	//To Handle Frame.
 	public void switchToFrame(int frame) 
 	{
 		try
@@ -147,26 +138,26 @@ public class TestUtility extends TestBase
 		}
 	}
 	
-	//9. To Scroll to Particular Element 
+	//To Scroll to Particular Element. 
 	public static void scrollSpecificElement(WebDriver driver,WebElement element)
 	{
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", element);
 	}
 	
-	//10. Handle Alert in web base pop-up
+	//Handle Alert in web base pop-up.
 	public static void handleWebBaseAlert()
 	{
-		String alertMsg=driver.switchTo().alert().getText();// To Capture Alert text
+		String alertMsg=driver.switchTo().alert().getText();
 		System.out.println("Alert msg is:"+alertMsg);
-		Alert alrt=driver.switchTo().alert();// In direct approach to handle alert
+		Alert alrt=driver.switchTo().alert();
 		alrt.accept();
 					
 		driver.switchTo().alert().accept();
 					
-		Assert.assertEquals(alertMsg, "Field cannot be empty");//Verify Alert Message	
+		Assert.assertEquals(alertMsg, "Field cannot be empty");
 	}
 	
-	//11. Element Display or Not
+	//Element Display or Not.
 	public static void displayElement()
 	{
 		boolean elementDisplayed=driver.findElement(By.xpath("")).isDisplayed();
@@ -180,7 +171,7 @@ public class TestUtility extends TestBase
 		}
 	}
 	
-	//12. Element is Enable or Not
+	//Element is Enable or Not.
 	public static void enableElement()
 	{
 		boolean enable=driver.findElement(By.xpath("")).isEnabled();
@@ -194,24 +185,7 @@ public class TestUtility extends TestBase
 		}
 	}
 	
-	//13. Sending Email 
-	//You can refer the user guide https://commons.apache.org/proper/commons-email/userguide.html
-	public static void sendEmail() throws EmailException
-	{
-		Email email = new SimpleEmail();
-		email.setHostName("smtp.gmail.com");
-		email.setSmtpPort(465);
-		email.setAuthenticator(new DefaultAuthenticator("saquibhelal78@gmail.com", "****"));
-		email.setSSLOnConnect(true);
-		email.setFrom("rehan@gmail.com");
-		email.setSubject("Automation Test Report");
-		email.setMsg("This is a test mail from Selenium :-)");
-		email.addTo("rehanabrahim@gmail.com");
-		email.send();
-		System.out.println("Email Sent Successfully======>");
-	}
-	
-	//14. Extent Report - 1
+	//Extent Report - 1.
 	public static String getSystemDate() 
 	{
 		DateFormat dateFormat = new SimpleDateFormat("_ddMMyyyy_HHmmss");
@@ -219,22 +193,19 @@ public class TestUtility extends TestBase
 		return dateFormat.format(date);
 	}
 	
-	//15. Extent Report - 2
+	//Extent Report - 2.
 	public static String getScreenshot(WebDriver driver, String screenshotName) throws IOException
 	{
-		//We have generated Date now.
 		String dateName = new SimpleDateFormat("_ddMMyyyy_HHmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		//After execution, you could see a folder "FailedTestsScreenshots"
-		//Under Source folder
 		String destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/" + screenshotName + dateName + ".png";
 		File finalDestination = new File(destination);
 		FileUtils.copyFile(source, finalDestination);
 		return destination;
 	}
 	
-	//16. Set Date For Log4J
+	//Set Date For Log4J.
 	public static void setDateForLog4j() 
 	{
 		SimpleDateFormat dateFormat = new SimpleDateFormat("_ddMMyyy_HHmmss");
